@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :courses
+
   get "examples/index"
   get "examples" => 'examples#index'
 
