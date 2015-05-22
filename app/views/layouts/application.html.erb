@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title><%= raw(@title) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+<%= render partial: 'breadcrumbs' %>
+
+<nav id="proposition-menu" class="no-proposition-name">
+  <ul id="proposition-links">
+    <li><a class="" href="/government/organisations">Departments</a></li>
+    <li><a class="" href="/government/world">Worldwide</a></li>
+    <li><a class="" href="/government/how-government-works">How government works</a></li>
+    <li><a class="" href="/government/get-involved">Get involved</a></li>
+    <li class="clear-child"><a class="active" href="/government/policies">Policies</a></li>
+    <li><a class="" href="/government/publications">Publications</a></li>
+    <li><a class="" href="/government/publications?publication_filter_option=consultations">Consultations</a></li>
+    <li><a class="" href="/government/statistics">Statistics</a></li>
+    <li><a class="" href="/government/announcements">Announcements</a></li>
+  </ul>
+</nav>
+
+<main id="content" role="main">
+  
+<%= yield %>
+
+</main>
+</div>
+</body>
+</html>
