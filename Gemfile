@@ -53,6 +53,7 @@ end
 
 gem 'govuk_frontend_toolkit'
 gem 'slimmer'
+gem 'govuk_elements_rails', :git => "https://github.com/ministryofjustice/govuk_elements_rails.git", :submodules => true
 
 group :test do
   gem 'rspec-rails', '~> 3.0'
